@@ -28,3 +28,6 @@ else:
             break
     if flag == -1:
         print("weak password")
+
+
+# git commit -m 'initial commit'
