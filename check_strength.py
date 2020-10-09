@@ -1,13 +1,13 @@
-import re 
-T = int(input("no if test cases-"))
-while T> 0:
-    password = input("Enter your password-")
-    flag = 0
-    while True:   
-        if (len(password)<8 or len(password)>15): 
-            flag = -1
-            break
-        elif not re.search("[a-z]", password): 
+import re
+import sys
+password = input('Enter password\n')
+flag = 0
+if len(password) < 6:
+    print(f'Please enter {6-len(password)} more characters')
+    sys.exit()
+else:
+    while True:
+        if not re.search("[a-z]", password): 
             flag = -1
             break
         elif not re.search("[A-Z]", password): 
@@ -24,8 +24,7 @@ while T> 0:
             break
         else: 
             flag = 0
-            print("Valid Password") 
+            print("Strong password")
             break
-    
-    if flag ==-1: 
-        print("Not a Valid Password")
+    if flag == -1:
+        print("weak password")

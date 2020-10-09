@@ -1,14 +1,11 @@
-
-T = int(input('no of tests'))
+import re
+T = int(input('no of tests\n'))
 for i in range(T):
 
     s , p = (str(x) for x in input().split())
-    
-    l1 = len(s)
-    l2 = len(p)
-    if l2 == 2*(l1):
-        if s in p:
-            print("Possible")
+    if len(p) == 2*(len(s)):
+        if re.search(s,p):
+            print("possible")
     else:
         print('impossible')
 
