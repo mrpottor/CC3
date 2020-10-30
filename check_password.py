@@ -29,3 +29,4 @@ while T> 0:
     
     if flag ==-1: 
         print("Not a Valid Password")
+    T -=1
