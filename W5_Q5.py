@@ -23,7 +23,7 @@ def calcAngle(h, m):
 
 
 def main():
-    h, m, t = list(map(int, input('H,M,T separated with spaces:-').split()))
+    h, m, t = list(map(int, input('H,M,T separated with space:-').split()))
     for i in range(t):
         mi = int(input('no of minutes passed:-'))
         current_time = mi + m
