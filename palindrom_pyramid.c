@@ -1,4 +1,6 @@
 #include<stdio.h>
+// This juat a commment
+//this c code generates palinsromic pyramid
 int main()
 {
 int n, i, j, space, count = 1, num = 0, star = 8;
