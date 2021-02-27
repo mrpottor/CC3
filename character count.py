@@ -1,4 +1,4 @@
-T = int(input("how many tests you want to bro \n"))
+T = int(input("how many tests \n"))
 # taking input for no of test cases 
 while T > 0:  # while loop to iterate through tests
     word = input("enter the word bro:-\n")  # TAKING word input
